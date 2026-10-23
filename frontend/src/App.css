@@ -1,0 +1,52 @@
+
+.invoice-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.invoice-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.invoice-form input,
+.invoice-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+.invoice-form button {
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invoice-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #15803d;
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .invoice-form {
+    grid-template-columns: 1fr;
+  }
+}
